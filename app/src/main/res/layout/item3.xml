@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="18dp"
+    android:background="#ffffff">
+    <ImageView
+        android:id="@+id/i3_image"
+        android:layout_width="160dp"
+        android:layout_height="120dp" />
+    <TextView
+        android:id="@+id/i3_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#323232"
+        android:textStyle="bold"
+        android:singleLine="true"
+        />
+    <TextView
+        android:id="@+id/i3_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="#646464"
+        android:singleLine="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+            <TextView
+                android:id="@+id/i3_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="#B3B3BA"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/i3_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#EF422A"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/i3_button"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="查看详情"
+        android:textSize="14dp"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:background="#00C081" />
+</LinearLayout>

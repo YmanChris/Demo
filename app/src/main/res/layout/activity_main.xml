@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#B2E5ED">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:gravity="bottom|center"
+        android:background="@drawable/top">
+        <TextView
+            android:text="活动时间:8月4日-8月11日"
+            android:textSize="18dp"
+            android:textColor="#1F7B89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/support_price_ticket_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_margin="10dp"
+            />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/support_price_ticket_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/rbt1"
+            android:text="暑期爆款"
+            style="@style/RadioButton"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/rbt2"
+            android:text="考研"
+            style="@style/RadioButton" />
+        <RadioButton
+            android:id="@+id/rbt3"
+            android:text="四六级"
+            style="@style/RadioButton" />
+        <RadioButton
+            android:id="@+id/rbt4"
+            android:text="实用英语"
+            style="@style/RadioButton" />
+        <RadioButton
+            android:id="@+id/rbt5"
+            android:text="GRE"
+            style="@style/RadioButton" />
+    </RadioGroup>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ffffff"
+        android:dividerHeight="1dp">
+    </ListView>
+</LinearLayout>
+
+</LinearLayout>
